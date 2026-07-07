@@ -39,32 +39,32 @@
 
 / {
     macros {
-        zero_zero: new_macro {
+        zero_zero: zero_zero {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0>;
-            label = "NEW_MACRO";
+            label = "zero_zero";
         };
 
-        LR_parenthesises: new_macro {
+        LR_parenthesises: LR_parenthesises {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
-            label = "NEW_MACRO";
+            label = "LR_parenthesises";
         };
 
-        LR_brackets: new_macro {
+        LR_brackets: LR_brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
-            label = "NEW_MACRO";
+            label = "LR_brackets";
         };
 
-        LR_braces: new_macro {
+        LR_braces: LR_braces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
-            label = "NEW_MACRO";
+            label = "LR_braces";
         };
     };
 
