@@ -82,10 +82,10 @@
 
         layer_1 {
             bindings = <
-&none   &kp F2  &none  &none       &kp F5      &none    &none     &kp HOME       &none   &kp END    &none  &none
-&none   &none   &none  &none       &none       &none    &kp LEFT  &kp DOWN       &kp UP  &kp RIGHT  &none  &none
-&none   &none   &none  &none       &none       &none    &none     &none          &none   &none      &none  &none
-&trans  &none   &none  &kp DELETE  &kp LSHIFT  &none    &none     &kp LS(ENTER)  &none   &none      &none  &none
+&kp ESCAPE  &none  &kp F2  &none       &none       &kp F5       &none      &kp HOME       &none          &kp END    &none  &kp ESCAPE
+&none       &none  &none   &none       &none       &none        &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &none  &none
+&none       &none  &none   &none       &none       &kp LANG1    &kp LANG2  &none          &none          &none      &none  &none
+&trans      &none  &none   &kp DELETE  &kp LSHIFT  &none        &none      &kp LS(ENTER)  &kp LA(ENTER)  &none      &none  &none
             >;
         };
 
