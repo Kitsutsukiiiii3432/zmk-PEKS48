@@ -100,10 +100,10 @@
 
         layer_3 {
             bindings = <
-&kp GRAVE       &none  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &none  &none  &LR_parenthesises  &none                 &kp GRAVE
-&none           &none  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp RS(MINUS)            &none  &none  &none  &LR_brackets       &kp NON_US_BACKSLASH  &kp PIPE
-&kp LEFT_SHIFT  &none  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RS(EQUAL)            &none  &none  &none  &LR_braces         &none                 &kp RIGHT_SHIFT
-&none           &none  &none            &none
+&kp GRAVE       &kp NON_US_BACKSLASH  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &none  &none  &LR_parenthesises  &kp NON_US_BACKSLASH  &kp GRAVE
+&none           &none                 &kp DOLLAR       &kp PERCENT   &kp CARET             &kp RS(MINUS)            &none  &none  &none  &LR_brackets       &none                 &none
+&kp LEFT_SHIFT  &none                 &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RS(EQUAL)            &none  &none  &none  &LR_braces         &none                 &kp RIGHT_SHIFT
+&none           &none                 &none            &none
             >;
         };
 
