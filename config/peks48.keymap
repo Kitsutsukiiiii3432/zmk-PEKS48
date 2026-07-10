@@ -73,37 +73,46 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q             &kp W         &kp E          &kp R        &kp T    &kp Y  &kp U        &kp I      &kp O          &kp P             &kp GRAVE
-&kp LCTRL  &kp A             &kp S         &kp D          &kp F        &kp G    &kp H  &kp J        &kp K      &kp L          &kp SEMICOLON     &kp SQT
-&none      &mt LEFT_SHIFT Z  &kp X         &kp C          &kp V        &kp B    &kp N  &kp M        &kp COMMA  &kp DOT        &mt RSHIFT SLASH  &none
-&mo 1      &none             &kp LEFT_ALT  &kp BACKSPACE  &lt 2 SPACE  &none    &none  &lt 2 ENTER  &mo 3      &kp RIGHT_ALT  &kp RWIN          &mo 4
+&kp TAB         &kp Q  &kp W         &kp E          &kp R  &kp T          &kp Y  &kp U        &kp I      &kp O          &kp P          &kp GRAVE
+&kp LCTRL       &kp A  &kp S         &kp D          &kp F  &kp G          &kp H  &kp J        &kp K      &kp L          &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X         &kp C          &kp V  &kp B          &kp N  &kp M        &kp COMMA  &kp DOT        &kp SLASH      &kp RIGHT_SHIFT
+&mo 1           &none  &kp LEFT_ALT  &kp BACKSPACE  &none  &lt 2 SPACE    &none  &lt 2 ENTER  &mo 3      &kp RIGHT_ALT  &kp RWIN       &mo 5
             >;
         };
 
-        layer_1 {
+        vimstyle_layer {
             bindings = <
-&kp ESCAPE  &none  &kp F2  &none       &none       &kp F5    &none      &kp HOME        &none          &kp END    &none  &kp ESCAPE
-&none       &none  &none   &none       &none       &none     &kp LEFT   &kp DOWN        &kp UP         &kp RIGHT  &none  &none
-&none       &none  &none   &none       &none       &none     &kp LANG1  &kp LANGUAGE_2  &none          &none      &none  &none
-&trans      &none  &none   &kp DELETE  &kp LSHIFT  &none     &none      &kp LS(ENTER)   &kp LA(ENTER)  &none      &none  &none
+&kp ESCAPE  &none  &kp F2  &none       &none  &kp F5            &none     &kp HOME       &none          &kp END    &none  &kp ESCAPE
+&none       &none  &none   &none       &none  &none             &kp LEFT  &kp DOWN       &kp UP         &kp RIGHT  &none  &none
+&none       &none  &none   &none       &none  &none             &none     &none          &none          &none      &none  &none
+&trans      &none  &none   &kp DELETE  &none  &kp LEFT_SHIFT    &none     &kp LS(ENTER)  &kp LA(ENTER)  &none      &none  &none
             >;
         };
 
-        layer_2 {
+        num_layer {
             bindings = <
-&kp ESCAPE  &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &none      &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &kp LANG2  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&trans      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL          &kp LANG1  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-&none       &none            &none            &double_zero     &mo 3            &none              &none      &mo 3   &none   &none   &none    &none
+&kp ESCAPE  &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &none  &none      &none  &none      &none  &none
+&none       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &none  &kp LANG2  &none  &kp LANG1  &none  &none
+&trans      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL          &none  &none      &none  &none      &none  &trans
+&none       &none            &none            &mo 4            &none            &mo 3              &none  &mo 3      &mo 4  &none      &none  &none
             >;
         };
 
-        layer_3 {
+        symbol_layer {
             bindings = <
 &kp GRAVE  &kp NON_US_BACKSLASH  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none  &none  &none  &LR_parenthesises  &kp NON_US_BACKSLASH  &kp GRAVE
 &none      &none                 &kp DOLLAR       &kp PERCENT   &kp CARET             &kp RS(MINUS)            &none  &none  &none  &LR_brackets       &none                 &none
 &none      &none                 &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RS(EQUAL)            &none  &none  &none  &LR_braces         &none                 &none
 &none      &none                 &none            &none
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F10    &none  &none  &none  &none  &none  &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &none  &none  &none  &none  &none  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F12    &none  &none  &none  &none  &none  &none
+&none  &none  &none   &none
             >;
         };
 
@@ -113,15 +122,6 @@
 &kp LEFT_CONTROL  &none         &none         &none         &none  &bt BT_CLR_ALL    &none        &kp HOME  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp END          &none
 &none             &none         &none         &none         &none  &bootloader       &bootloader  &none     &kp DOWN_ARROW  &LR_braces       &kp RIGHT_SHIFT  &none
 &none             &none         &none         &none         &none  &none             &none        &none     &kp RIGHT_GUI   &none            &none            &none
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans    &trans
             >;
         };
 
