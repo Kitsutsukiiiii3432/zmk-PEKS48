@@ -82,19 +82,19 @@
 
         vimstyle_layer {
             bindings = <
-&kp ESCAPE  &none  &kp F2  &none       &none           &kp F5           &none     &kp HOME       &none   &kp END            &none  &kp ESCAPE
-&none       &none  &none   &none       &kp LEFT_SHIFT  &none            &kp LEFT  &kp DOWN       &kp UP  &kp RIGHT          &none  &none
-&none       &none  &none   &none       &none           &none            &none     &kp LANG1      &none   &kp LANG2          &none  &none
-&trans      &none  &none   &kp DELETE  &none           &kp LS(SPACE)    &none     &kp LS(ENTER)  &none   &kp LS(RIGHT_ALT)  &none  &none
+&kp ESCAPE  &none  &kp F2  &none       &none           &kp F5           &none      &kp HOME       &none   &kp END            &none  &kp ESCAPE
+&none       &none  &none   &none       &kp LEFT_SHIFT  &none            &kp LEFT   &kp DOWN       &kp UP  &kp RIGHT          &none  &none
+&none       &none  &none   &none       &none           &none            &kp LANG1  &none          &none   &kp LANG2          &none  &none
+&trans      &none  &none   &kp DELETE  &none           &kp LS(SPACE)    &none      &kp LS(ENTER)  &none   &kp LS(RIGHT_ALT)  &none  &none
             >;
         };
 
         num_layer {
             bindings = <
-&kp ESCAPE  &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &none  &none  &none  &none  &none  &none
-&none       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &none  &none  &none  &none  &none  &none
-&trans      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL          &none  &none  &none  &none  &none  &trans
-&none       &none            &none            &mo 4            &none            &mo 3              &none  &mo 3  &mo 4  &none  &none  &none
+&kp ESCAPE  &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &none      &none  &none  &none      &none  &none
+&none       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &none      &none  &none  &none      &none  &none
+&trans      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL          &kp LANG1  &none  &none  &kp LANG2  &none  &trans
+&none       &none            &none            &mo 4            &none            &mo 3              &none      &mo 3  &mo 4  &none      &none  &none
             >;
         };
 
