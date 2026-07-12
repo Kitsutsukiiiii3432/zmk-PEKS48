@@ -85,10 +85,10 @@
 
         vimstyle_layer {
             bindings = <
-&kp ESCAPE  &none  &kp F2  &none       &none           &kp F5           &none      &kp HOME       &none   &kp END            &none  &kp ESCAPE
-&none       &none  &none   &none       &kp LEFT_SHIFT  &none            &kp LEFT   &kp DOWN       &kp UP  &kp RIGHT          &none  &none
-&none       &none  &none   &none       &none           &none            &kp LANG1  &none          &none   &kp LANG2          &none  &none
-&trans      &none  &none   &kp DELETE  &none           &kp LS(SPACE)    &none      &kp LS(ENTER)  &none   &kp LS(RIGHT_ALT)  &none  &none
+&kp ESCAPE  &none  &kp F2  &none       &none           &kp F5           &none      &kp HOME       &none   &kp END        &none  &kp ESCAPE
+&none       &none  &none   &none       &kp LEFT_SHIFT  &none            &kp LEFT   &kp DOWN       &kp UP  &kp RIGHT      &none  &none
+&none       &none  &none   &none       &none           &none            &kp LANG1  &none          &none   &kp LANG2      &none  &none
+&trans      &none  &none   &kp DELETE  &none           &kp LS(SPACE)    &none      &kp LS(ENTER)  &none   &kp LA(ENTER)  &none  &none
             >;
         };
 
