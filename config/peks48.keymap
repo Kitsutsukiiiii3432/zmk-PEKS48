@@ -75,6 +75,7 @@
         m_RClick {
             bindings = <&mkp RCLK>;
             key-positions = <43 19>;
+            layers = <0>;
         };
     };
 
