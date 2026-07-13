@@ -69,6 +69,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        m_RClick {
+            bindings = <&mkp RCLK>;
+            key-positions = <43 19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
