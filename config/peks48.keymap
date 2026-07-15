@@ -78,19 +78,19 @@
 
         default_layer {
             bindings = <
-&kp TAB             &kp Q  &kp W  &kp E          &kp R  &kp T          &kp Y  &kp U        &kp I      &kp O          &kp P          &kp ESCAPE
-&mt LCTRL CAPSLOCK  &kp A  &kp S  &kp D          &kp F  &kp G          &kp H  &kp J        &kp K      &kp L          &kp SEMICOLON  &kp SQT
-&mo 6               &kp Z  &kp X  &kp C          &kp V  &kp B          &kp N  &kp M        &kp COMMA  &kp DOT        &kp SLASH      &mo 6
-&mo 1               &none  &none  &kp BACKSPACE  &none  &lt 2 SPACE    &none  &lt 2 ENTER  &mo 3      &kp RIGHT_ALT  &kp RWIN       &mo 5
+&kp TAB             &kp Q  &kp W  &kp E          &kp R  &kp T          &kp Y  &kp U        &kp I          &kp O          &kp P          &kp ESCAPE
+&mt LCTRL CAPSLOCK  &kp A  &kp S  &kp D          &kp F  &kp G          &kp H  &kp J        &kp K          &kp L          &kp SEMICOLON  &kp SQT
+&mo 6               &kp Z  &kp X  &kp C          &kp V  &kp B          &kp N  &kp M        &kp COMMA      &kp DOT        &kp SLASH      &mo 6
+&mo 1               &none  &none  &kp BACKSPACE  &none  &lt 2 SPACE    &none  &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_WIN  &none          &mo 5
             >;
         };
 
         vimstyle_layer {
             bindings = <
-&kp ESCAPE  &none  &kp F2  &none       &none           &kp F5           &none      &kp HOME       &none   &kp END        &none  &kp ESCAPE
-&none       &none  &none   &none       &kp LEFT_SHIFT  &none            &kp LEFT   &kp DOWN       &kp UP  &kp RIGHT      &none  &none
-&none       &none  &none   &none       &none           &none            &kp LANG1  &none          &none   &kp LANG2      &none  &none
-&trans      &none  &none   &kp DELETE  &none           &kp LS(SPACE)    &none      &kp LS(ENTER)  &none   &kp LA(ENTER)  &none  &none
+&kp ESCAPE  &none  &kp F2  &none       &none           &kp F5           &none           &kp HOME       &none          &kp END    &none  &kp ESCAPE
+&none       &none  &none   &none       &kp LEFT_SHIFT  &none            &kp LEFT        &kp DOWN       &kp UP         &kp RIGHT  &none  &none
+&none       &none  &none   &none       &none           &none            &kp LANGUAGE_2  &none          &none          &none      &none  &none
+&trans      &none  &none   &kp DELETE  &none           &kp LS(SPACE)    &none           &kp LS(ENTER)  &kp LA(ENTER)  &none      &none  &none
             >;
         };
 
